@@ -1,0 +1,68 @@
+@import "styles/colors";
+
+.social-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon-div {
+  padding: 6px;
+  cursor: pointer;
+  margin: 6px;
+}
+
+.social-icon {
+  height: 40px;
+}
+
+.social-icon:hover {
+  opacity: 0.6;
+}
+
+.icon-and-copy-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+}
+
+.copy-box-div {
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  width: 110px;
+}
+
+.copy-message-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: clr(neutral, light);
+  width: max-content;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.copied-message-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: clr(secondary-color);
+    width: max-content;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+.copy-message-box:empty {
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 720px) {
+  .social-icon {
+    height: 32px;
+  }
+}

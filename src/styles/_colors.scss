@@ -1,0 +1,53 @@
+/* SCSS HEX */
+$primary-color: #00A7E1;
+$secondary-color: #23CE6B;
+$tertiary-color: #FF4A1C;
+$grey: #272D2D;
+$white: #f6f8ff;
+$black: #50514F;
+
+$lighten: 5;
+$darken: 25;
+
+$colors: (
+  primary-color: (
+    base: $primary-color,
+    light: lighten($primary-color, $lighten),
+    dark: darken($primary-color, $darken),
+  ),
+  secondary-color: (
+    base: $secondary-color,
+    light: lighten($secondary-color, $lighten),
+    dark: darken($secondary-color, $darken),
+  ),
+  tertiary-color: (
+    base: $tertiary-color,
+    light: lighten($tertiary-color, $lighten),
+    dark: darken($tertiary-color, $darken),
+  ),
+  grey: (
+    base: $grey,
+    light: lighten($grey, $lighten),
+    dark: darken($grey, $darken),
+  ),
+  white: (
+    base: $white,
+    light: lighten($white, $lighten),
+    dark: darken($white, $darken),
+  ),
+  black: (
+    base: $black,
+    light: lighten($black, $lighten),
+    dark: darken($black, $darken),
+  ),
+  neutral: ( 
+    base: #69777F,
+    light: #B2CAD8,
+    dark: $black,
+  ),
+);
+
+@function clr($base, $shade: base) {
+    $color: map-get(map-get($colors, $base), $shade);
+    @return $color;
+  }
