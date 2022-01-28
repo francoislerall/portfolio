@@ -7,7 +7,7 @@ function SocialContact() {
   const socialData = SocialData;
   const [copySuccess, setCopySuccess] = useState(false);
   const [cursorHover, setCursorHover] = useState(false);
-
+  
   return (
     <div className="social-contact">
       {socialData.map((item) => {

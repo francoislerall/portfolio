@@ -1,29 +1,20 @@
-@import 'styles/colors';
-
-.about {
-  padding-bottom: 48px;
-}
+@import "styles/colors";
 
 .about-top {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.profile-picture {
-  height: 320px;
-  border-radius: 50%;
-  padding: 12px;
+  align-items: right;
+  flex-direction: column;
+  margin-top: 70px;
 }
 
 .about-info {
-  font-size: 24px;
+  font-size: 70px;
 }
 
 .info-name {
-  color: clr(tertiary-color);
-  font-size: 32px;
-  font-weight: bold;
+  color: clr(primary-green);
+  font-size: 80px;
+  font-weight: 900;
 }
 
 @media only screen and (max-width: 720px) {
@@ -33,16 +24,11 @@
     align-items: center;
   }
 
-  .profile-picture {
-    height: 180px;
-  }
-
   .about-info {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .info-name {
-    font-size: 26px;
+    font-size: 36px;
   }
-
 }

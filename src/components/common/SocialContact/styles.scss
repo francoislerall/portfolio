@@ -10,10 +10,12 @@
   padding: 6px;
   cursor: pointer;
   margin: 6px;
+  filter: invert(96%) sepia(9%) saturate(530%) hue-rotate(322deg)
+    brightness(90%) contrast(92%);
 }
 
 .social-icon {
-  height: 40px;
+  height: 60px;
 }
 
 .social-icon:hover {
@@ -32,37 +34,61 @@
   display: flex;
   justify-content: center;
   height: 25px;
-  width: 110px;
+  width: 130px;
 }
 
 .copy-message-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: clr(neutral, light);
   width: max-content;
   padding: 4px 8px;
-  border-radius: 4px;
+  border-radius: 3px;
   font-size: 14px;
+  border: 1px solid clr(warm);
+}
+
+.copy-message-box:empty {
+  display: none;
 }
 
 .copied-message-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: clr(secondary-color);
-    width: max-content;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 14px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  padding: 4px 8px;
+  border-radius: 3px;
+  border: 1px solid clr(warm);
+  font-size: 14px;
+}
 
-.copy-message-box:empty {
-  background-color: transparent;
+#scss
+.main-class {
+   opacity: 1;
+   transition: 1s;
+}
+.hide-classname {
+   opacity: 0;
+   transition: 1s;
 }
 
 @media only screen and (max-width: 720px) {
   .social-icon {
     height: 32px;
+  }
+
+  .copy-box-div {
+      margin-top: 20px;
+    height: 25px;
+    width: 100px;
+  }
+
+  .copy-message-box {
+    font-size: 10px;
+  }
+
+  .copied-message-box {
+    font-size: 10px;
   }
 }

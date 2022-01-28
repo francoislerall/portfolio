@@ -1,0 +1,25 @@
+@import "styles/colors";
+
+.menu-download-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    padding: 6px 11px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid clr(warm);
+  }
+  
+  .menu-download-link-container svg {
+    margin-right: 4px;
+  }
+  
+  .menu-download-link-container:hover {
+    opacity: 0.7;
+  }
+  
+  .menu-download-link {
+    text-decoration: none;
+    color: clr(warm);
+  }

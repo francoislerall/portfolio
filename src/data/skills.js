@@ -12,7 +12,7 @@ export const SkillsData = [
       },
       {
         name: "Django",
-        icon: <i class="devicon-django-plain colored"></i>,
+        icon: <i class="devicon-django-plain"></i>,
       },
       {
         name: "ReactJs",
@@ -57,8 +57,7 @@ export const SkillsData = [
       },
       {
         name: "Arduino",
-        icon: <i class="devicon-arduino-plain colored"></i>
-        ,
+        icon: <i class="devicon-arduino-plain colored"></i>,
       },
     ],
   },

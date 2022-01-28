@@ -1,0 +1,120 @@
+@import "styles/colors";
+
+.education-card {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px -58px;
+  padding: 8px 0px;
+  width: 100%;
+}
+
+.education-photo {
+  width: 12%;
+}
+
+.education-info {
+  margin-right: 24px;
+  text-align: left;
+  max-width: 80%;
+}
+
+.education-info p {
+  background-color: clr(dark-green, light);
+  padding: 25px 25px;
+  box-shadow: 0 10px 30px -15px clr(dark-green, dark);
+}
+
+.education-title {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.education-tags {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 4px 8px;
+  border-radius: 2px;
+  margin-right: 6px;
+  margin-bottom: 4px;
+  font-family: "Fira Code", monospace;
+}
+
+.education-location-link {
+  text-decoration: none;
+  color: black;
+}
+
+.location-link-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 16px;
+  margin-right: 6px;
+  background-color: clr(primary-green);
+  color: clr(dark-green);
+}
+
+.location-link-button:hover {
+  opacity: 0.6;
+}
+
+.education-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.education-links {
+  margin-top: 6px;
+  display: flex;
+}
+
+.link-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 16px;
+  margin-right: 6px;
+  border: 1px solid clr(warm);
+  color: clr(warm);
+}
+
+.link-button:hover {
+  opacity: 0.6;
+}
+
+.link-button svg {
+  margin-right: 4px;
+}
+
+@media only screen and (max-width: 720px) {
+  .education-photo {
+    display: none;
+  }
+  .education-card {
+    flex-direction: column;
+  }
+
+  .education-info {
+    margin-left: 0px;
+    margin-top: 12px;
+  }
+  .education-tags {
+    max-width: 100%;
+  }
+
+  .location-link-button {
+    font-size: 12px;
+  }
+}

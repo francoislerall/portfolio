@@ -1,20 +1,53 @@
 import React from "react";
+import ReactDOM from "react-dom";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "components/body/Experience/styles.scss";
-import Separator from "components/common/Separator";
 import { ExperienceData } from "data/experience";
-import ExperienceCard from "components/body/ExperienceCard";
 
 function Experience() {
   const experienceData = ExperienceData;
+
   return (
     <div className="experience">
-      <Separator />
-      <label className="section-title">Experience</label>
-      <div className="experience-list">
-        {experienceData.map((item) => {
-          return <ExperienceCard item={item} />;
+      <Tabs>
+        <TabList>
+          {experienceData.map((experience) => {
+            return (
+              <Tab>
+                <p>{experience.company}</p>
+              </Tab>
+            );
+          })}
+        </TabList>
+
+        {experienceData.map((experience) => {
+          return (
+            <TabPanel>
+              <div className="panel-content">
+                <p>
+                  <span className="experience-designation">
+                    {experience.designation}
+                  </span>
+                  <a
+                  className="company-link"
+                    href={experience.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                  {" "}@ {experience.company}
+                  </a>
+                </p>
+                <p className="experience-dates">{ experience.dates }</p>
+                <ul className="about-list">
+                  {experience.about.map((item) => {
+                    return <li className="about-item"><div>{item.info}</div></li>;
+                  })}
+                </ul>
+              </div>
+            </TabPanel>
+          );
         })}
-      </div>
+      </Tabs>
     </div>
   );
 }

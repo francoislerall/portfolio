@@ -1,0 +1,62 @@
+@import 'styles/colors';
+
+.hero-style{
+    min-height: 100vh; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding: 12px;
+    position: relative;
+    align-items: center;
+    font-family: 'Fira Code', monospace;
+}
+
+.menu {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.menu-icon {
+    color: clr(white);
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.web-menu {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    height: 50px;
+    border-radius: 15%;
+    border: 1px solid clr(primary-green);
+    padding: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        
+    }
+    .mobile-menu {
+        display: flex;
+    }
+    
+    .web-menu {
+        display: none;
+    }
+    
+    .logo {
+        display: flex;
+        height: 40px;
+        border-radius: 15%;
+        padding: 2px;
+    }
+}

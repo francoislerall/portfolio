@@ -1,22 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "components/body/About/styles.scss";
 import SocialContact from "components/common/SocialContact";
+import TextLoop from "react-text-loop";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
     <div className="about">
       <div className="about-top">
         <div className="about-info">
-          Hello, I am
-          <br /> <span className="info-name">François Le Rall</span>,
-          <br /> I am a software engineer!
+          <TextLoop children={["SOFTWARE", "ELECTRONIC", "ROBOTIC"]} /> ENGINEER
         </div>
-        <div className="about-photo">
-          <img
-            src={require("assets/profile.jpg")}
-            className="profile-picture"
-          />
-        </div>
+        <div className="info-name">François Le Rall</div>
       </div>
       <SocialContact />
     </div>

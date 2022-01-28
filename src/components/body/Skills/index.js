@@ -9,9 +9,6 @@ function Skills() {
 
   return (
     <div className="skills">
-      <Separator />
-      <label className="section-title">Skills</label>
-      <div className="skills-container">
         {skillsData.map((item) => {
           return (
             <div className="skills-section">
@@ -24,7 +21,6 @@ function Skills() {
             </div>
           );
         })}
-      </div>
     </div>
   );
 }

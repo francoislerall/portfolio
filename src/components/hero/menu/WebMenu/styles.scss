@@ -1,0 +1,45 @@
+@import "styles/colors";
+
+.web {
+  display: flex;
+  align-items: right;
+  align-items: center;
+}
+
+.web-menu-resume {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.web-menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  list-style-type: lower-greek;
+  color: clr(warm);
+}
+
+.web-menu-item {
+  font-size: 14px;
+  margin-right: 60px;
+  font-weight: 300;
+}
+
+.web-menu-item:hover span {
+  color: clr(warm);
+}
+
+.web-menu-item a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.web-menu-item:last-child {
+  margin-right: 0px;
+}
+
+.menu-label {
+  color: white;
+}

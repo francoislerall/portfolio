@@ -42,7 +42,7 @@ function ProjectCard({ project }) {
           {project.github && (
             <a
               className="project-link"
-              href={project.demo}
+              href={project.github}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -54,11 +54,11 @@ function ProjectCard({ project }) {
           )}
         </div>
         <p>{project.about}</p>
-        <div className="project-tags">
+        <ul className="project-tags">
           {project.tags.map((tag) => {
-            return <label className="tag">{tag}</label>;
+            return <li className="tag">{tag}</li>;
           })}
-        </div>
+        </ul>
       </div>
       <img src={project.image} className="project-photo" />
     </div>

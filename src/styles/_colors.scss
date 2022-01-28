@@ -1,29 +1,35 @@
 /* SCSS HEX */
-$primary-color: #00A7E1;
-$secondary-color: #23CE6B;
-$tertiary-color: #FF4A1C;
-$grey: #272D2D;
-$white: #f6f8ff;
-$black: #50514F;
+$primary-green: #8fa9a6;
+$secondary-green: #c2d8ca;
+$dark-green: #043d34;
+$warm: #cb8589;
+$grey: #4d7771;
+$white: #ded4c9;
+$black: #1e2433;
 
-$lighten: 5;
+$lighten: 2;
 $darken: 25;
 
 $colors: (
-  primary-color: (
-    base: $primary-color,
-    light: lighten($primary-color, $lighten),
-    dark: darken($primary-color, $darken),
+  primary-green: (
+    base: $primary-green,
+    light: lighten($primary-green, $lighten),
+    dark: darken($primary-green, $darken),
   ),
-  secondary-color: (
-    base: $secondary-color,
-    light: lighten($secondary-color, $lighten),
-    dark: darken($secondary-color, $darken),
+  secondary-green: (
+    base: $secondary-green,
+    light: lighten($secondary-green, $lighten),
+    dark: darken($secondary-green, $darken),
   ),
-  tertiary-color: (
-    base: $tertiary-color,
-    light: lighten($tertiary-color, $lighten),
-    dark: darken($tertiary-color, $darken),
+  dark-green: (
+    base: $dark-green,
+    light: lighten($dark-green, $lighten),
+    dark: darken($dark-green, $darken),
+  ),
+  warm: (
+    base: $warm,
+    light: lighten($warm, $lighten),
+    dark: darken($warm, $darken),
   ),
   grey: (
     base: $grey,
@@ -40,14 +46,20 @@ $colors: (
     light: lighten($black, $lighten),
     dark: darken($black, $darken),
   ),
-  neutral: ( 
-    base: #69777F,
-    light: #B2CAD8,
+  neutral: (
+    base: #69777f,
+    light: #b2cad8,
     dark: $black,
   ),
 );
 
 @function clr($base, $shade: base) {
-    $color: map-get(map-get($colors, $base), $shade);
-    @return $color;
-  }
+  $color: map-get(map-get($colors, $base), $shade);
+  @return $color;
+}
+
+:export {
+  warm: clr(warm);
+  white: clr(white);
+  dark-green: clr(dark-green);
+}

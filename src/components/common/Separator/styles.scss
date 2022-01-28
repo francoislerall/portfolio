@@ -1,18 +1,8 @@
+@import "styles/colors";
+
 .separator {
-  background-image: linear-gradient(
-    to right,
-    #233ece,
-    #0057d9,
-    #006ce0,
-    #007fe3,
-    #0091e4,
-    #009ee5,
-    #00abe2,
-    #00b6de,
-    #00c0d6,
-  );
-  height: 6px;
+  background-color: clr(white);
+  height: 2px;
   width: 40%;
-  border-radius: 3px;
   margin: 16px 0px;
 }

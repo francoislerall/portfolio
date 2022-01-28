@@ -5,23 +5,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 16px 0px;
+  margin: 16px -58px;
   padding: 8px 0px;
+  width: 100%;
 }
 
 .project-photo {
   width: 40%;
+  box-shadow: 0 10px 30px -15px clr(dark-green, dark);
 }
 
 .project-info {
   margin-right: 24px;
   text-align: left;
-  display: -webkit-box;
-  -webkit-line-clamp: 6;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
   max-width: 80%;
+}
+
+.project-info p {
+  background-color: clr(dark-green, light);
+  padding: 25px 25px;
+  box-shadow: 0 10px 30px -15px clr(dark-green, dark);
 }
 
 .project-title {
@@ -31,16 +34,14 @@
 
 .project-tags {
   display: flex;
-  max-width: 60%;
+  max-width: 100%;
   flex-wrap: wrap;
+  font-family: 'Fira Code', monospace;
+  list-style: ">";
 }
 
 .tag {
-  padding: 4px 8px;
-  background-color: clr(secondary-color);
-  border-radius: 4px;
-  margin-right: 6px;
-  margin-bottom: 4px;
+  margin-left: 20px;
 }
 
 .project-location-link {
@@ -48,16 +49,21 @@
   color: black;
 }
 
-.location-link-button{
+.location-link-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: clr(secondary-color);
   width: max-content;
   padding: 4px 8px;
-  border-radius: 4px;
+  border-radius: 3px;
   font-size: 16px;
   margin-right: 6px;
+  background-color: clr(primary-green);
+  color: clr(dark-green)
+}
+
+.location-link-button:hover {
+  opacity: 0.6;
 }
 
 .project-links a {
@@ -74,12 +80,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: clr(primary-color);
   width: max-content;
   padding: 4px 8px;
-  border-radius: 4px;
+  border-radius: 3px;
   font-size: 16px;
   margin-right: 6px;
+  border: 1px solid clr(warm);
+  color: clr(warm);
+}
+
+.link-button:hover {
+  opacity: 0.6;
+}
+
+.link-button svg {
+margin-right: 4px;
 }
 
 @media only screen and (max-width: 720px) {

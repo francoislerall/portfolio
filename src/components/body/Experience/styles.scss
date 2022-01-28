@@ -4,12 +4,80 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-top: 30px;
 }
 
-.experience-list {
+.react-tabs {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin: 24px 0px;
+  color: white;
+}
+
+.react-tabs__tab-list {
+  display: flex;
+  flex-direction: column;
+  color: clr(white);
+  font-family: "Fira Code", monospace;
+  font-size: 14px;
+  width: max-content;
+  white-space: nowrap;
+}
+
+.react-tabs__tab {
+  list-style: none;
+  cursor: pointer;
+  border-left: 1px solid clr(grey);
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.react-tabs__tab:hover {
+  background: clr(dark-green, light);
+}
+
+.react-tabs__tab--selected {
+  border-left: 1px solid clr(warm);
+  background: clr(dark-green, light);
+  color: clr(warm);
+}
+
+.react-tabs__tab-panel {
+  display: none;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+  margin-left: 20px;
+}
+
+.experience-designation {
+  font-size: 20px;
+  font-weight: 600;
+  color: clr(white);
+}
+
+.company-link {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+  color: clr(warm);
+  text-decoration: none;
+}
+
+.about-list {
+  list-style-type: ">";
+}
+
+.about-item::marker {
+  color: clr(warm);
+  font-family: "Fira Code", monospace;
+  margin-right: 60px;
+}
+
+.about-item div {
+  padding-left: 8px;
+}
+
+.experience-dates {
+  font-family: "Fira Code", monospace;
+  font-size: 14px;
 }
