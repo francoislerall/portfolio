@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "components/body/Experience/styles.scss";
 import { ExperienceData } from "data/experience";

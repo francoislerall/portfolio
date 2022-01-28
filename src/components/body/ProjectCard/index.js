@@ -60,7 +60,7 @@ function ProjectCard({ project }) {
           })}
         </ul>
       </div>
-      <img src={project.image} className="project-photo" />
+      <img src={project.image} className="project-photo" alt={`the project: ${project.id}`}/>
     </div>
   );
 }

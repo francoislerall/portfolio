@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "components/body/About/styles.scss";
 import SocialContact from "components/common/SocialContact";
 import TextLoop from "react-text-loop";
-import { Link } from "react-router-dom";
 
 function About() {
   return (

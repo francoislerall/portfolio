@@ -6,7 +6,7 @@ export const ExperienceData = [
     location: "Warsaw",
     designation: "Robotic/Software Engineer",
     dates: "April - December 2019",
-    companyLogo: <img src={require("assets/icons/nomagic.png")} />,
+    companyLogo: <img src={require("assets/icons/nomagic.png")} alt="logo of the Nomagic company" />,
     about: [
       {
         info: "Building of advanced pick and place robot control system - from design, through implementation to support in production.",
@@ -26,7 +26,7 @@ export const ExperienceData = [
     location: "Warsaw",
     designation: "Robotic Engineer Trainee",
     dates: "September 2018 - March 2019",
-    companyLogo: <img src={require("assets/icons/nomagic.png")} />,
+    companyLogo: <img src={require("assets/icons/nomagic.png")} alt="logo of the Nomagic company"/>,
     about: [
       {
         info: "Estimation of the mass of a manipulator payload in motion by means of an FT sensor.",
@@ -42,7 +42,7 @@ export const ExperienceData = [
     link: "https://www.energy-generation.org/",
     designation: "Technical Director ",
     dates: "September 2017 - March 2018",
-    companyLogo: <img src={require("assets/icons/eg.png")} />,
+    companyLogo: <img src={require("assets/icons/eg.png")} alt="logo of the Energy Generation company"/>,
     about: [
       {
         info: "Management of nine energy projects run by entrepreneurs from all over Africa (solar, wind, biogas, water electrolysis plant, pyrolysis).",
@@ -59,7 +59,7 @@ export const ExperienceData = [
     link: "https://www.sentryway.com/",
     designation: "Mechanical Design Engineer Trainee",
     dates: "April - September 2017",
-    companyLogo: <img src={require("assets/icons/sentryway.png")} />,
+    companyLogo: <img src={require("assets/icons/sentryway.png")} alt="logo of the Sentryway company"/>,
     about: [
       {
         info: "Design—using CATIA—of the mechanical body of a railway camera intended to browse the shelves of warehouses and malls.",

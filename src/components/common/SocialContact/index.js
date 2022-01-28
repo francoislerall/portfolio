@@ -13,19 +13,19 @@ function SocialContact() {
       {socialData.map((item) => {
         return (
           <div>
-            {item.type == "website" && (
+            {item.type === "website" && (
               <div className="icon-and-copy-box">
                 <div className="copy-box-div">
                   <div className="copy-message-box"></div>
                 </div>
                 <a href={item.link} target="_blank" rel="noopener noreferrer">
                   <div className="social-icon-div">
-                    <img src={item.icon} className="social-icon" />
+                    <img src={item.icon} className="social-icon" alt="social network icon"/>
                   </div>
                 </a>
               </div>
             )}
-            {item.type == "mail" && (
+            {item.type === "mail" && (
               <div className="icon-and-copy-box">
                 <div className="copy-box-div">
                   {!cursorHover && !copySuccess && (
@@ -50,7 +50,7 @@ function SocialContact() {
                     setCopySuccess(true);
                   }}
                 >
-                  <img src={item.icon} className="social-icon" />
+                  <img src={item.icon} className="social-icon" alt="social network icon" />
                 </div>
               </div>
             )}

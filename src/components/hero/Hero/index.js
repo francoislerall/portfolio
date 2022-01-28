@@ -11,7 +11,7 @@ function Hero() {
     <section className="hero-style">
       <div className="header">
         <div className="logo-div">
-          <img src={require("assets/icons/logo512.png")} className="logo" />
+          <img src={require("assets/icons/logo512.png")} className="logo" alt="logo of the website" />
         </div>
         <div className="menu">
           <div className="web-menu">

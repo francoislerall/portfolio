@@ -45,15 +45,15 @@ export const SkillsData = [
       },
       {
         name: "ROS",
-        icon: <img src={require("assets/icons/ros.png")} />,
+        icon: <img src={require("assets/icons/ros.png")} alt="logo of ROS"/>,
       },
       {
         name: "Gazebo",
-        icon: <img src={require("assets/icons/gazebo.png")} />,
+        icon: <img src={require("assets/icons/gazebo.png")} alt="logo of gazebo"/>,
       },
       {
         name: "CATIA",
-        icon: <img src={require("assets/icons/catia.png")} />,
+        icon: <img src={require("assets/icons/catia.png")} alt="logo of catia" />,
       },
       {
         name: "Arduino",

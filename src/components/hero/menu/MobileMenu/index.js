@@ -4,12 +4,6 @@ import "components/hero/menu/MobileMenu/styles.scss";
 import MenuResumeDownloadButton from "components/hero/menu/MenuResumeDownloadButton";
 
 function MobileMenu({ isOpen, setIsOpen }) {
-  const theme = {
-    menu: "mobile-options",
-    option: "mobile-option",
-    optionIcon: "mobile-option-icon",
-  };
-
   return (
     <aside className="mobile-menu-pannel">
       <div className="close-icon" onClick={() => setIsOpen(!isOpen)}>

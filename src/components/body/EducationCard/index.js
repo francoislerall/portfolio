@@ -25,7 +25,7 @@ function EducationCard({ education }) {
             </div>
             <p>{education.about}</p>
           </div>
-          <img src={education.image} className="education-photo" />
+          <img src={education.image} className="education-photo" alt="logo of the school" />
         </div>
       );
 }
